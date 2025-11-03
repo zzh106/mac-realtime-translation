@@ -1,0 +1,36 @@
+# macOS 实时翻译系统 - 离线依赖清单
+# Python 3.11+ | Apple Silicon | macOS 14+
+
+# ===== 核心深度学习框架 =====
+torch>=2.4.0
+torchaudio>=2.4.0
+transformers>=4.45.0
+
+# ===== 音频处理 =====
+sounddevice>=0.4.6
+numpy>=1.24.0,<2.0
+librosa>=0.10.0
+scipy>=1.11.0
+
+# ===== 语音识别 (Whisper) =====
+openai-whisper>=20231117
+ffmpeg-python>=0.2.0
+
+# ===== 翻译模型 =====
+sentencepiece>=0.1.99
+sacremoses>=0.0.53
+protobuf>=3.20.0
+
+# ===== 中文 TTS =====
+MeloTTS>=0.1.2
+jieba>=0.42.1
+pypinyin>=0.49.0
+g2p-en>=2.1.0
+cn2an>=0.5.17
+
+# ===== 配置与工具 =====
+PyYAML>=6.0.1
+colorlog>=6.7.0
+colorama>=0.4.6
+tqdm>=4.66.0
+psutil>=5.9.0
